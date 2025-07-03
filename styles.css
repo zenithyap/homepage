@@ -19,7 +19,8 @@ header {
 
 header img {
     width: 400px;
-    height: auto;
+    height: 400px;
+    object-fit: cover;
 }
 
 .about-container {
@@ -31,6 +32,7 @@ header img {
 }
 
 .about-container nav {
+    font-size: 1.5rem;
     display: flex;
     gap: 10px;
     margin-left: auto;
@@ -57,4 +59,52 @@ a:hover {
     font-size: 48px;
     width: 400px;
     text-align: center;
+}
+
+@media (max-width: 1024px) and (min-width: 600px) {
+    header {
+        display: block;
+        padding: 0;
+    }
+
+    .about-container {
+        display: block;
+        margin: 6rem auto;
+        max-width: 65ch;
+    }
+
+    .about-container nav {
+        display: none;
+    }
+
+    .image-container p {
+        top: 0;
+        right: 0;
+    }
+
+    header img {
+        float: left;
+        width: 300px;
+        height: 300px;
+        margin: 0 2rem 1rem -4rem;
+    }
+}
+
+@media (max-width: 599px) {
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-container {
+        box-shadow: none;
+        padding: 0;
+        margin-top: 2rem;
+        gap: 0.5rem;
+    }
+
+    .about-container nav {
+        margin-top: 1rem;
+        margin-inline: auto;
+    }
 }
