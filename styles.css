@@ -12,6 +12,15 @@
     margin-inline: auto;
 }
 
+.background {
+    width: 100vw;
+    height: 50%;
+    position: absolute;
+    background-color: #145DA0;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 0% 100%);
+    z-index: -1;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -27,8 +36,10 @@ header img {
     display: flex;
     flex-direction: column;
     gap: 24px;
-    box-shadow: 3px 3px 5px 1px rgb(217, 217, 217);
+    box-shadow: 3px 3px 25px 1px rgb(99, 99, 99);
     padding: 24px;
+    background-color: #FFF;
+    max-width: 66ch;
 }
 
 .about-container nav {
@@ -62,6 +73,10 @@ a:hover {
 }
 
 @media (max-width: 1024px) and (min-width: 600px) {
+    .background {
+        height: 35%;
+    }
+
     header {
         display: block;
         padding: 0;
@@ -91,6 +106,10 @@ a:hover {
 }
 
 @media (max-width: 599px) {
+    .background {
+        height: 40%;
+    }
+
     header {
         display: flex;
         flex-direction: column;
