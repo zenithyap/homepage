@@ -7,6 +7,7 @@
 .container {
     padding: 48px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     max-width: 1200px;
     margin-inline: auto;
@@ -42,7 +43,7 @@ header img {
     max-width: 66ch;
 }
 
-.about-container nav {
+nav {
     font-size: 1.5rem;
     display: flex;
     gap: 10px;
@@ -70,6 +71,32 @@ a:hover {
     font-size: 48px;
     width: 400px;
     text-align: center;
+}
+
+main {
+    margin-top: 10rem;
+}
+
+.card-container {
+    margin-top: 1rem;
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.image-placeholder {
+    background-color: #ADD8E6;
+    height: 250px;
+}
+
+.card-description-container {
+    padding: 2rem;
+    box-shadow: 0px 10px 25px 1px rgb(219, 219, 219);
+}
+
+.card-description-header {
+    display: flex;
+    margin-bottom: 1rem;
 }
 
 @media (max-width: 1024px) and (min-width: 600px) {
