@@ -98,6 +98,48 @@ main {
     margin-bottom: 1rem;
 }
 
+footer {
+    background-color: #145DA0;
+    color: #FFF;
+}
+
+footer svg {
+    width: 2rem;
+    fill: #FFF;
+}
+
+.footer-container {
+    padding: 48px;
+    max-width: 1200px;
+    margin-inline: auto;
+    display: flex;
+}
+
+.footer-container img {
+    width: 600px;
+}
+
+.footer-description-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.footer-description-container p {
+    max-width: 50ch;
+}
+
+.footer-description-container nav {
+    margin-left: 0;
+}
+
+.footer-description-container .icon-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+
 @media (max-width: 1024px) and (min-width: 600px) {
     .background {
         height: 35%;
