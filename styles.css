@@ -113,10 +113,11 @@ footer svg {
     max-width: 1200px;
     margin-inline: auto;
     display: flex;
+    justify-content: space-between;
 }
 
 .footer-container img {
-    width: 600px;
+    max-width: 600px;
 }
 
 .footer-description-container {
@@ -171,6 +172,10 @@ footer svg {
         height: 300px;
         margin: 0 2rem 1rem -4rem;
     }
+
+    .footer-container img {
+        max-width: 350px;
+    }
 }
 
 @media (max-width: 599px) {
@@ -193,5 +198,22 @@ footer svg {
     .about-container nav {
         margin-top: 1rem;
         margin-inline: auto;
+    }
+
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-description-container p {
+        max-width: 100%;
+    }
+
+    .footer-description-container nav {
+        margin-inline: auto;
+        margin-bottom: 1rem;
+    }
+
+    .footer-container img {
+        max-width: 100%;
     }
 }
