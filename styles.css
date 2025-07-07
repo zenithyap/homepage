@@ -221,6 +221,11 @@ footer svg {
         flex-direction: column;
     }
 
+    header img,
+    .image-container p {
+        width: 100%;
+    }
+
     .about-container {
         box-shadow: none;
         padding: 0;
