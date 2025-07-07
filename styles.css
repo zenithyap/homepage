@@ -24,12 +24,12 @@
 
 p {
     font-family: 'Roboto';
-    font-size: 1.3rem;
+    font-size: clamp(1rem, 2vw, 1.3rem);
 }
 
 h1, h2, h3 {
     font-family: 'Playfair Display';
-    font-size: 2rem;
+    font-size: clamp(1.8rem, 2vw, 2rem);
 }
 
 .container {
