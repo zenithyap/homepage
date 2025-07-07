@@ -189,16 +189,21 @@ footer svg {
         display: none;
     }
 
+    .image-container {
+        float: left;
+    }
+
     .image-container p {
+        width: 300px;
         top: 0;
         right: 0;
+        transform: translate(55%, 10%);
     }
 
     header img {
-        float: left;
         width: 300px;
         height: 300px;
-        margin: 0 2rem 1rem -4rem;
+        margin: 0 2rem 1rem 0;
     }
 
     .footer-container img {
